@@ -1,0 +1,65 @@
+.footer {
+    width: 100vw;
+    background: #19ABE3;
+    padding: 80px;
+    margin-top:80px;
+  }
+  .footerWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .footer h4 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    color: #ffffff;
+  }
+  .footer span {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+  
+    color: #ffffff;
+  }
+  
+  .number {
+    padding-bottom: 7px;
+  }
+  .socialIcon {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .footer {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .footer {
+      width: 100%;
+    }
+    
+  }
+  @media only screen and (max-width: 500px) {
+    .footer {
+      width: 100%;
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      
+      padding-left: 25px;
+    }
+    .privacy{
+      width:100%;
+    }
+  }
+  
