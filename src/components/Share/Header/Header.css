@@ -1,0 +1,359 @@
+.navbarMain {
+    width: 100%;
+  }
+  .navBarMainWrap {
+    width: 100vw;
+  }
+  
+  .navbarBanner {
+    width: 100%;
+    height: 45px;
+    background: #e9f6e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoImg {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneIcon {
+    color: #4ab449 !important;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .navbarBanner h2 {
+    font-family: PoppinsRegular;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .navbarBanner p {
+    font-family: PoppinsRegular;
+    font-size: 16px;
+    margin-left: 46px;
+  }
+  .navigationMain {
+    width: 100%;
+    height: 90px;
+    background: #e6f8ff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999 !important;
+    box-shadow: #4ab449 0px 5px 15px;
+    transition: all 0.5s cubic-bezier(0, -0.07, 1, 1.02);
+    border-bottom: 1px solid #4ab449;
+    width: 100%;
+    height: 90px;
+  }
+  
+  .logo {
+    height: 60px;
+    width: 180px;
+    object-fit: cover;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .navigationContent {
+    display: flex;
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navigationLeft {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  .navigationLeft p {
+    font-family: PoppinsRegular;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .inputDiv {
+    height: 43px;
+    background: #e9f6e9;
+    border: 1px solid #4ab449;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    width: 40%;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  
+  
+  .signUpBtn button {
+    width: 130px;
+    height: 45px;
+    background: #4ab449;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.5s cubic-bezier(0.07, 0.09, 0.82, 1.02);
+  }
+  .signUpBtn button:hover {
+    border-radius: 20px;
+  }
+  .userIcon {
+    font-size: 50px;
+    color: #4ab449 !important;
+    cursor: pointer;
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .accountWrap {
+    position: relative;
+    z-index: 99999999;
+  }
+  .userInfo {
+    width: 270px;
+    box-shadow: #4ab449 0px 5px 15px;
+    position: absolute;
+    z-index: 999999 !important;
+    padding: 13px 15px 7px 15px;
+    top: 50px;
+    left: -70px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: #fff;
+    display: none;
+    transition: all 0.5s cubic-bezier(0.07, 0.09, 0.82, 1.02);
+  }
+  .accountWrap:hover .userInfo {
+    display: block !important;
+  }
+  .userInfo ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .navigationMain {
+    visibility: visible;
+  }
+  
+  .wrapMenu li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .menuIcon,
+  .menuFlightIcon {
+    color: #4ab449 !important;
+    font-size: 25px;
+  }
+  .menuFlightIcon {
+    transform: rotate(41deg);
+  }
+  
+  .securityInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 215px;
+    margin-top: 23px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .securityInfo p {
+    font-size: 14px;
+  }
+  .securityInfo button {
+    background: #4ab449;
+    color: white;
+    width: 70px;
+    border-radius: 3px;
+    padding: 3px 0px;
+  }
+  
+  .mobileToggleSideMenu {
+    display: none;
+  }
+  
+  @media (max-width: 1366px) {
+    /* Add your CSS styles for small laptops here */
+    .navigationMain {
+      display: block;
+    }
+  }
+  .bar {
+    display: none;
+  }
+  /* Styles for tablets */
+  @media (max-width: 1024px) {
+    .navigationMain {
+      display: block;
+    }
+    .navigationLeft p {
+      font-family: PoppinsRegular;
+      font-size: 18px;
+      margin-left: 4px;
+    }
+    .inputDiv {
+      height: 43px;
+      background: #e9f6e9;
+      border: 1px solid #4ab449;
+      border-radius: 10px;
+      display: flex;
+      overflow: hidden;
+      justify-content: space-between;
+      width: 36%;
+    }
+    .navigationContent {
+      width: 100%;
+      padding:0 10px;
+    }
+    .signUpBtn{
+      margin-right:5px;
+    }
+    
+  
+    .navigationLeft {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      width: 35%;
+    }
+  }
+  
+  /* Styles for mobile devices */
+  @media (max-width: 768px) {
+    .navigationMain {
+      height: 78px;
+    }
+    .sticky {
+      display: none;
+    }
+    .mobLogo {
+      height: 65px;
+      width: 129px;
+    }
+    .inputDiv {
+      display: none;
+    }
+  
+  .accountWrap, .aboutUs{
+    display: none;
+  }
+  
+    .mobileToggleSideMenu {
+      display: block;
+    }
+    .menuWraps {
+      background: #fff;
+      position: fixed;
+      z-index: 999999;
+      width: 279px;
+      top: 115px;
+      right: -300px;
+      color: black;
+      transition: all 0.5s cubic-bezier(0.52, 0.48, 0.78, 0.71);
+      height: 100vh;
+      padding-top: 9px;
+      padding-left: 15px;
+    }
+    .hideMenu {
+      background: #fff;
+      position: fixed;
+      z-index: 999999;
+      width: 279px;
+      top: 123px;
+      right: 0px;
+      color: black;
+      transition: all 0.5s cubic-bezier(0.52, 0.48, 0.78, 0.71);
+      height: 100vh;
+      padding-left: 15px;
+      padding-top: 9px;
+    }
+  
+    .bar {
+      padding: 0px !important;
+      text-align: left !important;
+      width: 49px;
+      height: 46px;
+      line-height: 50px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+      position: absolute;
+      top: 64px;
+      right: 5px;
+    }
+    .bar div {
+      position: relative;
+    }
+    .bar span {
+      width: 30px;
+      height: 3px;
+      background: #4ab449;
+      margin-bottom: 6px;
+      display: block;
+      transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+    }
+  
+    .bar1 {
+      transform: translateY(8px) rotate(45deg);
+      -webkit-transform: translateY(8px) rotate(45deg);
+      -moz-transform: translateY(8px) rotate(45deg);
+      -ms-transform: translateY(8px) rotate(45deg);
+      -o-transform: translateY(8px) rotate(45deg);
+      position: absolute;
+      top: -14px;
+      left: -12px;
+      transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+    }
+    .bar2 {
+      display: none;
+      position: absolute !important;
+      display: none !important;
+      transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+    }
+    .bar3 {
+      transform: translateY(-8px) rotate(-45deg);
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      -moz-transform: translateY(-8px) rotate(-45deg);
+      -ms-transform: translateY(-8px) rotate(-45deg);
+      -o-transform: translateY(-8px) rotate(-45deg);
+      position: absolute;
+      top: 1px;
+      right: -18px;
+      transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .navigationMOb {
+      height: 55px;
+    }
+    .bar {
+      top: 56px;
+    }
+    .navigationMain {
+      height: 65px;
+    }
+  
+    .hideMenu,
+    .menuWraps {
+      top: 101px;
+    }
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .navbarBanner h2 , .navbarBanner p{
+      font-size: 12px;
+    }
+  }
+  
+  
+  
