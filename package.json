@@ -18,6 +18,7 @@
     "@mui/styled-engine-sc": "^6.1.7",
     "@reduxjs/toolkit": "^2.3.0",
     "axios": "^1.7.7",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.11.17",
     "i": "^0.3.7",
     "lenis": "^1.1.16",
@@ -29,6 +30,7 @@
     "react-redux": "^9.1.2",
     "sonner": "^1.7.0",
     "styled-components": "^6.1.13",
+    "tailwind-merge": "^2.5.4",
     "zod": "^3.23.8"
   },
   "devDependencies": {
