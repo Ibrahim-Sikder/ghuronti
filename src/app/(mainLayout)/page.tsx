@@ -1,10 +1,11 @@
+import Banner from '@/components/HomePage/Home/Banner/Banner';
 import React from 'react';
 
 const Home = () => {
   return (
-    <div>
-      <h4>welcome to ghuronti </h4>
-    </div>
+    <>
+      <Banner />
+    </>
   );
 };
 
