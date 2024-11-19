@@ -1,0 +1,28 @@
+.sectionTitle {
+    width: 650px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .sectionTitle h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+  .sectionTitle p {
+    color: black;
+    line-height: 26px;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  @media only screen and (max-width:768px){
+    .sectionTitle {
+      width: 100%;
+    }
+    .sectionTitle h2 {
+      font-size: 25px;
+    }
+    .sectionTitle p {
+      font-size: 16px;
+    }
+  }

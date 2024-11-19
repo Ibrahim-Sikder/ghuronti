@@ -1,0 +1,224 @@
+.singleHajj {
+  width: 300px;
+  background: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.singleHajj:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.hajjContentWrap {
+  padding: 16px 2px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.hajjContentWrap h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.imgWrap {
+  height: 200px;
+  overflow: hidden;
+}
+
+.imgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hajjImg {
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+
+.hajjImg:hover {
+  transform: scale(1.2);
+}
+
+.hajjBtn {
+  width: 113px;
+  height: 34px;
+  display: flex;
+  border-radius: 3px;
+  margin-top: 15px;
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  background: #19abe3;
+  color: #fff;
+}
+
+.hajjBtn:hover {
+  background: #19abe3;
+}
+
+.day {
+  width: 54px;
+  height: 32px;
+  font-size: 12px;
+  background: #19abe3;
+  line-height: 30px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.registrationCard {
+  height: 170px;
+  width: 390px;
+  border: 1px solid #e6f8ff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+.registrationCard:hover {
+  background: #19abe3;
+  color: #fff;
+}
+
+.registerIcon {
+  font-size: 80px !important;
+  color: #4ab449 !important;
+  margin-right: 5px !important;
+}
+
+.activeRegister {
+  background: #19abe3;
+  transition: all 0.5s ease;
+  color: #fff;
+}
+
+.activeRegister:hover {
+  background: #4ab449;
+}
+
+.activeRegister .registerIcon {
+  color: #fff !important;
+}
+
+.rBtn {
+  width: 236px;
+  height: 53px;
+  background: #19abe3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: white;
+  display: grid;
+  margin-top: 10px;
+  place-content: center;
+}
+
+.package {
+  box-sizing: border-box;
+  position: absolute;
+  width: 376px;
+  height: 50px;
+  left: 535px;
+  top: 215px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: #ffffff;
+  border: 1px solid #4ab449;
+  box-shadow: 0px 2px 4px rgba(25, 171, 227, 0.3);
+  border-radius: 5px;
+}
+
+.hajjRegistraion {
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+
+  .bannerWrap h2 {
+    margin-bottom: 10px;
+  }
+
+  .registrationCard {
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .firstChild {
+    border-top-left-radius: 0px !important;
+    padding-left: 0px;
+  }
+
+  .lastChild {
+    margin-left: 113px;
+  }
+
+
+  .searchBtnWrap {
+    width: 161px;
+    margin-top: 10px;
+  }
+
+  .hajjUmraPackage select {
+    width: 310px;
+  }
+
+  .searchBtnWrap {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .imgWrap {
+    width: 100%;
+  }
+
+  .registrationCard {
+    width: 90%;
+  }
+
+  .hajjUmraPackage {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  /*   
+    .date2 {
+      left: 187px;
+    }
+  
+    .date,
+    .date2 {
+      top: 383px;
+      width: 39%;
+    }
+    .package4 {
+      right: 32px;
+    }
+    .hajjUmraPackage select {
+      width: 274px;
+  }
+  .hajjUmrapackageWrap {
+    margin-top: 36px;
+  } */
+
+}

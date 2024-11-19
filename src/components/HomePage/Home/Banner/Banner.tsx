@@ -13,6 +13,7 @@ import TourIcon from '@mui/icons-material/TravelExplore';
 import BusIcon from '@mui/icons-material/DirectionsBus';
 import TrainIcon from '@mui/icons-material/Train';
 import './Banner.css';
+import HajjSearchContent from './HajjSearchContent';
 
 const Banner = () => {
     const [value, setValue] = React.useState('1');
@@ -29,7 +30,8 @@ const Banner = () => {
         '& .MuiTab-root': {
             fontSize: isSmallScreen ? '13px' : isMediumScreen ? '18px' : '20px',
             textTransform: 'none',
-            minWidth: isSmallScreen ? '13%' : '14.3%',
+            minWidth: isSmallScreen ? '13%' : isMediumScreen ? '13%' : '13.85%',
+
             border: isSmallScreen ? 'none' : '1px solid white',
             transition: 'background-color 0.3s, color 0.3s',
             color: 'white',
@@ -52,7 +54,7 @@ const Banner = () => {
 
     return (
         <div className="bannerWrap">
-            <h2>Welcome to Ghuronti! Find Tours, Flights & Hotels Packages</h2>
+            <h2 className='text-center md:text-2xl px-5 lg:px-0 pb-3 lg:pb-0 lg:text-3xl pt-5  '>Welcome to Ghuronti! Find Tours, Flights & Hotels Packages</h2>
 
             <div className="heroBoxMain">
                 <div>
@@ -67,7 +69,7 @@ const Banner = () => {
                                 display: isSmallScreen ? 'flex' : '',
                                 justifyContent: 'center',
                                 alignItems: 'center',
-                                padding: isSmallScreen ? '0 10px' : '0',
+                                padding: isSmallScreen ? ' 10px' : '0',
                                 margin: '0 auto',
                                 borderRadius: '8px',
                                 position: isSmallScreen ? 'relative' : '',
@@ -80,7 +82,7 @@ const Banner = () => {
                                     ...tabStyle,
                                     '& .MuiTabScrollButton-root': {
                                         color: '#fff',
-                                        fontSize: '40px',  // Set the size of the scroll button to 40px
+                                        fontSize: '40px',
                                         fontWeight: 'bold',
                                         '&.Mui-disabled': {
                                             color: 'rgba(25, 171, 227, 0.5)',
@@ -88,8 +90,8 @@ const Banner = () => {
                                     },
                                 }}
                                 onChange={handleChange}
-                                variant={isSmallScreen ? 'scrollable' : 'standard'}
-                                scrollButtons={isSmallScreen ? 'auto' : false}
+                                variant={isMediumScreen ? 'scrollable' : 'standard'}
+                                scrollButtons={isMediumScreen ? 'auto' : false}
                                 aria-label="scrollable auto tabs example"
                                 allowScrollButtonsMobile
                             >
@@ -102,7 +104,7 @@ const Banner = () => {
                                 <Tab icon={<TrainIcon />} label="Train" value="7" />
                             </TabList>
                         </Box>
-                        <TabPanel value="1">Hajj & Umrah Content</TabPanel>
+                        <TabPanel value="1"><HajjSearchContent/></TabPanel>
                         <TabPanel value="2">Flight Content</TabPanel>
                         <TabPanel value="3">Hotel Content</TabPanel>
                         <TabPanel value="4">Visa Content</TabPanel>
