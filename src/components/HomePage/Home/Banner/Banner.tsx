@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Box, Tab, useMediaQuery } from '@mui/material';
+import { Box, Button, Tab, useMediaQuery } from '@mui/material';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
@@ -14,6 +14,7 @@ import BusIcon from '@mui/icons-material/DirectionsBus';
 import TrainIcon from '@mui/icons-material/Train';
 import './Banner.css';
 import HajjSearchContent from './HajjSearchContent';
+import AirportAutocomplete from './FlightSearchTabContent/AuthoCompleteSearch';
 
 const Banner = () => {
     const [value, setValue] = React.useState('1');
@@ -104,8 +105,9 @@ const Banner = () => {
                                 <Tab icon={<TrainIcon />} label="Train" value="7" />
                             </TabList>
                         </Box>
-                        <TabPanel value="1"><HajjSearchContent/></TabPanel>
-                        <TabPanel value="2">Flight Content</TabPanel>
+                        <TabPanel value="1"><HajjSearchContent /> <Button>Hello</Button></TabPanel>
+                        <TabPanel value="2"><AirportAutocomplete/></TabPanel>
+
                         <TabPanel value="3">Hotel Content</TabPanel>
                         <TabPanel value="4">Visa Content</TabPanel>
                         <TabPanel value="5">Tour Content</TabPanel>
