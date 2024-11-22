@@ -14,7 +14,7 @@ import BusIcon from '@mui/icons-material/DirectionsBus';
 import TrainIcon from '@mui/icons-material/Train';
 import './Banner.css';
 import HajjSearchContent from './HajjSearchContent';
-import AirportAutocomplete from './FlightSearchTabContent/AuthoCompleteSearch';
+import FlightTab from './FlightSearchTabContent/FlightTab';
 
 const Banner = () => {
     const [value, setValue] = React.useState('1');
@@ -106,7 +106,9 @@ const Banner = () => {
                             </TabList>
                         </Box>
                         <TabPanel value="1"><HajjSearchContent /> <Button>Hello</Button></TabPanel>
-                        <TabPanel value="2"><AirportAutocomplete/></TabPanel>
+                        <TabPanel value="2">
+                            <FlightTab />
+                        </TabPanel>
 
                         <TabPanel value="3">Hotel Content</TabPanel>
                         <TabPanel value="4">Visa Content</TabPanel>
