@@ -47,7 +47,7 @@ const FlightTab = () => {
                     />
                 </Grid>
                 <Grid item xs={12} md={3}>
-                    <Button>Submit</Button>
+                    <Button type='submit'>Submit</Button>
                 </Grid>
             </Grid>
         </GHForm>
